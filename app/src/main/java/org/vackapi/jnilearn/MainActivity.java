@@ -16,5 +16,6 @@ public class MainActivity extends AppCompatActivity {
         JNILearn jniLearn=new JNILearn();
         jniLearn.test();
         textView.setText(jniLearn.stringFromJNI());
+        jniLearn.show();
     }
 }
