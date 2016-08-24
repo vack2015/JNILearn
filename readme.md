@@ -5,7 +5,8 @@
 ![gradle2.0+对ndk支持不佳](https://github.com/vack2015/JNILearn/blob/master/img/gradle2.0%2B%E6%94%AF%E6%8C%81%E4%B8%8D%E4%BD%B3.png)
 2. 脚本语言有所不同，如果使用了不同版本的脚本语言，会有以下错误
 ![注意这类错误，其实是脚本语言不对](https://github.com/vack2015/JNILearn/blob/master/img/%E6%B3%A8%E6%84%8F%E8%BF%99%E7%B1%BB%E9%94%99%E8%AF%AF.png)
-3. 如果你配置完美，那么，如果你写了一个native方法，可以按alt+enter来创建c层代码，只是我创建后出现在h文件里，没关系贴过去就好了
+3. 如果你配置完美，那么，如果你写了一个native方法，可以按alt+enter来创建c层代码，只是我创建后出现在h文件里，
+没关系贴过去就好了
 4. native方法别写在内部类里面，不然会报错，如下
 ![native方法别放在内部类里面，不然会让你怀疑人生](https://github.com/vack2015/JNILearn/blob/master/img/native%E4%B8%8D%E5%BA%94%E5%86%99%E5%9C%A8%E5%86%85%E9%83%A8%E7%B1%BB.png)
 5. 在你完成c层代码后需要通过javah生成头文件，像我这边的具体命令：
