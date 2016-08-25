@@ -46,23 +46,27 @@ JNIEXPORT jstring JNICALL Java_org_vackapi_jnilearn_JNILearn_stringFromJNI(JNIEn
 
 JNIEXPORT void JNICALL
 Java_org_vackapi_jnilearn_JNILearn_show(JNIEnv *env, jobject instance) {
-    // TODO
-    //创建java
+    //字符串操作
+    //创建java字符串
     jstring javaString=(*env)->NewStringUTF(env,"hello world");
     //把java字符串转换成c字符串
     jboolean isCopy;
     const jbyte *str=(*env)->GetStringUTFChars(env,javaString,&isCopy);
     if(str !=0){
-        printf("Java String %s",str);
         __android_log_print(ANDROID_LOG_ERROR,"VACK",str);
         if(isCopy==JNI_TRUE){
-            printf("C string is a copy of the Java String .");
             __android_log_write(ANDROID_LOG_ERROR,"VACK","C string is a copy of the Java String .");
         }else{
-            printf("C string points to actual string .");
             __android_log_write(ANDROID_LOG_ERROR,"VACK","C string points to actual string .");
         }
         //使用完GetStringChars/GetStringCharUTF函数获得C字符串使用完后必须释放,否则容易引起内存泄漏
         (*env)->ReleaseStringChars(env,javaString,str);
+    }
+    //数组操作
+    //创建数组
+    jintArray javaIntArray=(*env) ->NewIntArray(env,10);
+    if(javaIntArray!=0){
+        /*这里可以使用数组*/
+
     }
 }

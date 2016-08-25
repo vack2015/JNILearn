@@ -30,6 +30,7 @@ model{
     android.ndk {
         moduleName = "JNILearn"
         ldLibs.addAll(["android", "log"])//不添加的话在c代码里面打log会出错的
+        cppFlags.add("-fno-rtti")
     }
     android.productFlavors {
         // for detailed abiFilter descriptions, refer to "Supported ABIs" @
