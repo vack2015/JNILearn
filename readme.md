@@ -22,5 +22,5 @@ parameters   -d src\main\jni\ -bootclasspath $ModuleSdkPath$\platforms\android-2
 working directory  $ModuleFileDir$
 7. 其实我不知道在androidStudio里面怎么看printf的内容  
 8. 差点忘了要装这个
-
-8. 如果你想在上班之余问问题,划划水扣扣群:537610843
+![要装这个](https://github.com/vack2015/JNILearn/blob/master/img/%E5%B7%AE%E7%82%B9%E5%BF%98%E4%BA%86.png)
+9. 如果你想在上班之余问问题,划划水扣扣群:537610843
