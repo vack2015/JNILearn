@@ -67,6 +67,5 @@ Java_org_vackapi_jnilearn_JNILearn_show(JNIEnv *env, jobject instance) {
     jintArray javaIntArray=(*env) ->NewIntArray(env,10);
     if(javaIntArray!=0){
         /*这里可以使用数组*/
-
     }
 }

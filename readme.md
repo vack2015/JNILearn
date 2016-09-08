@@ -15,13 +15,14 @@ cd app/src/main/java
 javah -d ../jni org.vackapi.jnilearn.JNILearn  
 如果你不想在每次运行前都打一遍可以在setting-tools里面配置，如下
 ![这样配置](https://github.com/vack2015/JNILearn/blob/master/img/%E5%A6%82%E6%9E%9C%E4%B8%8D%E6%83%B3%E6%AF%8F%E6%AC%A1%E9%83%BD%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%89%93javah.png)
-让后Build-Make Project就可以自动帮你执行一遍了  
-name   Generate JNI Header File   
+ ~~让后build-make project就可以自动帮你执行一遍了~~  
+ 更正一下是：右键菜单--External Tools--Generate JNI Header File  
+ name   Generate JNI Header File   
 program   javah  
 parameters   -d src\main\jni\ -bootclasspath $ModuleSdkPath$\platforms\android-23\android.jar -classpath build\intermediates\classes\debug $FileClass$  
 working directory  $ModuleFileDir$
 7. 其实我不知道在androidStudio里面怎么看printf的内容  
 8. 差点忘了要装这个
 ![要装这个](https://github.com/vack2015/JNILearn/blob/master/img/%E5%B7%AE%E7%82%B9%E5%BF%98%E4%BA%86.png)
-9. 如果你想在上班之余问问题,划划水扣扣群:537610843  
+9. 如果你想在上班之余问问题,划划水扣扣群:537610843  扣扣260964393就是我
 10. 我在策划下一个JNI的目标，之前买了一本ndk的书《Android C++ 高级编程--使用NDK》，下一个github我想把上面的一些内容和程序清单打一打
